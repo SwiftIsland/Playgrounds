@@ -1,4 +1,5 @@
 # Creating an interactive readme in playgrounds
+Most of this tutorial is based on the WWDC talk [Getting the Most out of Playgrounds in Xcode](https://developer.apple.com/videos/play/wwdc2018/402/) So if you want to know more i recommend looking at it.
 
 ## Basic playground introduction
 
@@ -11,7 +12,7 @@ First open a new Playground in XCode 10. Now there are two ways in which you can
 
 ![inline-result.png](inline-result.png)
 
-By selecting the box you can show the result inline, so you can see the changes you make.
+By selecting the box you can show the result inline, so you can see the changes you make. When using the new play button, you can add a line that changes your view and only run that line to be able to see the quickest results!
 
 ### The live view
 If you want to see the result of ViewControllers you can set the current liveView to your viewController:
