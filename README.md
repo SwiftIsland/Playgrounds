@@ -2,7 +2,7 @@
 
 ## Basic playground introduction
 
-### Where is what and what is where
+### Where is what and what is where again?
 ![run.png](run.png)
 
 First open a new Playground in XCode 10. Now there are two ways in which you can run the playground code. 
@@ -44,6 +44,59 @@ And you can use the extension in your playground code.
 Pro-tip. When debugging these code files breakpoints don’t get hit, so debug them by either using print statements, or just add the code to your playground page to make full use of inspection and when you are happy with it move them to a separate code file.
 
 ## Creating the README
+
+### Adding playground to a framework
+
+When you want to add a playground to a framework, open the `.xcodeproj` file of the framework and add a new playground by going File > New > Playground.
+
+Remember to always open the  `.xcodeproj`  file and not just the playground, otherwise it won’t be able to access the framework.
+
+Don't forget to build the framework before you play your playground!
+
+Still having trouble? Here are some other tips:
+
+![platform.png](platform.png)
+
+- make sure you have the build target for you framework set to the same platform as your playground
+-
+-
+
+### Playground description
+
+Implement `playgroundDescirption` from the `CustomPlaygroundDisplayConvertible` protocol as an extension to the entiity you want to add the description to:
+
+```
+import UIKit
+
+extension NSObject: CustomPlaygroundDisplayConvertible {
+    public var playgroundDescription: Any {
+        return "Whatever you want"
+    }
+}
+```
+You can do this in your Playground Page or add it as a separate file in your Sources folder.
+
+Pro-tip: If you add a separate file, don't forget to build again!
+
+### Markdown
+
+For the possibilities of markdown in Playgrounds check [this](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html) out
+
+![markdown.png](markdown.png)
+
+Simply tick the render documentation box in the inspector and the markdown is displayed.
+
+### Playground Pages
+
+![new-page.png](new-page.png)
+
+To be able to add more info for your users without cluttering the playground, you can add multiple playground pages.
+
+![new-page2.png](new-page2.png)
+When you add a new Playground Page the page you had before will automatically get it’s own sub page as well. And the links to the previous page are also automatically added.
+
+
+
 
 
 
