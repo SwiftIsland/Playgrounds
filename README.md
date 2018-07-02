@@ -50,10 +50,8 @@ Remember to always open the  `.xcodeproj`  file and not just the `.playground` f
 **Don't forget to build the framework before you play your playground!**
 
 Still having trouble? Here are some other tips:
-
-![platform.png](platform.png)
-
 - make sure you have the build target for you framework set to the same platform as your playground
+![platform.png](platform.png)
 
 ### Playground description
 
