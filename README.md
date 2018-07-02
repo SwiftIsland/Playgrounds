@@ -50,8 +50,11 @@ Remember to always open the  `.xcodeproj`  file and not just the `.playground` f
 **Don't forget to build the framework before you play your playground!**
 
 Still having trouble? Here are some other tips:
+- Sometimes Playgrounds can be a bit buggy, so building the framework again and playing the playground again can never hurt. 
+- Restarting XCode can also be a good idea in some cases of uncorporation
 - make sure you have the build target for you framework set to the same platform as your playground
 ![platform.png](platform.png)
+- We can probably add more things to this list during the Workshop.
 
 ### Playground description
 
