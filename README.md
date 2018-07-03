@@ -95,7 +95,8 @@ No inspiration? Here are some suggestions:
 - [Hue](https://github.com/hyperoslo/Hue) Hue is the all-in-one coloring utility that you'll ever need. This is very likely to become a colorful project.
 -[Alamofire](https://github.com/Alamofire/Alamofire) Make it easier for people to get on board with Elegant HTTP Networking in Swift.
 -[Cheers](https://github.com/hyperoslo/Cheers) 🎊 Fancy confetti effects in Swift, if you are looking for a cheerful project.
--[](https://github.com/icanzilb/TaskQueue) Nice challenge to make a playground description for something abstract like a task queue.
+-[TaskQueue](https://github.com/icanzilb/TaskQueue) Nice challenge to make a playground description for something abstract like a task queue.
+-[CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift) Encrypt and decrypt in a playground
 
 What about getting some inspiration from frameworks that alaready have excellent playground readme's?
 - [RxSwift](https://github.com/ReactiveX/RxSwift/blob/master/Documentation/GettingStarted.md#playgrounds) 
