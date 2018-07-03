@@ -6,15 +6,15 @@ Most of this tutorial is based on the WWDC talk [Getting the Most out of Playgro
 ### Where is what and what is where again?
 First open a new Playground in XCode 10. Now there are two ways in which you can run the playground code. 
 1.  Down at the left to run the enitre playground
-2. Or you can use the play button on the lines
+2. Or you can use the play button on the lines to execute step by step
+Pro-tip: You can also use the shortcut `Shift+Return` after you wrote a line of code to execute it.
 ![run.png](run.png)
-
 
 By selecting the box you can show the result inline, so you can see the changes you make. When using the new play button, you can add a line that changes your view and only run that line to be able to see the quickest results!
 ![inline-result.png](inline-result.png)
 
 ### The live view
-If you want to see the result of ViewControllers you can set the current liveView to your viewController:
+If you want to see the result of Views or ViewControllers you can set the current liveView to your view or viewController:
 `PlaygroundPage.current.liveView = ViewController`
 Dont' forget to `Import PlaygroundSupport` when you do this.
 
@@ -28,16 +28,16 @@ Pro-tip: When you lose your live view you can reselect it in this drop down menu
 When you show the navigator you can add files to your playground:
 ![add-files.png](add-files.png)
 
-Add images to the `Resources` folder:
-![images.png](images.png)
-
-Add Code files to the `Sources` folder. Don't forget to make the classes or extensions public!
+Add Swift files to the `Sources` folder. They are automatically imported when visible, but don't forget to make the classes or extensions public, since sources are compiled as separate modules. 
 ![files.png](files.png)
 
 Then you can use the extension in your playground code:
 ![code.png](code.png)
 
 Pro-tip. When debugging these code files breakpoints don’t get hit, so debug them by either using print statements, or just add the code to your playground page to make full use of inspection and when you are happy with it move them to a separate code file.
+
+Add images or other non-code files to the `Resources` folder:
+![images.png](images.png)
 
 ## Creating the README
 
@@ -58,7 +58,9 @@ Still having trouble? Here are some other tips:
 
 ### Playground description
 
-Implement `playgroundDescription` from the `CustomPlaygroundDisplayConvertible` protocol as an extension to the entity you want to add the description to:
+In swift 4.1 `CustomPlaygroundDisplayConvertible` was introduced, this replaces `PlaygroundQuickLook` but instead of the description's type to be limited to be wrapped in PlaygroundQuickLook cases, it can now handle descriptions of `Any` type. For more info in this you read the [Proposal](https://github.com/apple/swift-evolution/blob/master/proposals/0198-playground-quicklook-api-revamp.md)
+
+Implement `playgroundDescription` from the `CustomPlaygroundDisplayConvertible` protocol as an extension to the entity you want to add a custom description to:
 
 ```
 import UIKit
@@ -80,6 +82,8 @@ For the possibilities of markdown in Playgrounds check [this](https://developer.
 Simply tick the render documentation box in the Inspector and the markdown is displayed:
 ![markdown.png](markdown.png)
 
+There are many possibilities, adding links, notes and even images and videos. Which can be very helpful in an educational playground.
+
 ### Playground Pages
 
 To be able to add more info for your users without cluttering the playground, you can add multiple playground pages:
@@ -87,6 +91,10 @@ To be able to add more info for your users without cluttering the playground, yo
 
 When you add a new Playground Page the page you had before will automatically get it’s own sub page as well. And the links to the previous page are also automatically added:
 ![new-page-2.png](new-page-2.png)
+
+Each playground page will have it’s own resources and sources folder. This can be quite convenient when creating a customPlaygroundDescription for the same entity that you want to be different per playground page.
+
+---
 
 Now you are ready to start writing your own interactive readme, if you yourself made any frameworks i would suggest to write a readme for one of those. Otherwise I would suggest to write one for your favourite framework, like I did. 
 
