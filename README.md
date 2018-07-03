@@ -90,6 +90,9 @@ When you add a new Playground Page the page you had before will automatically ge
 
 Now you are ready to start writing your own interactive readme, if you yourself made any frameworks i would suggest to write a readme for one of those. Otherwise I would suggest to write one for your favourite framework, like I did. 
 
+As an example here's the playground I made for the TinyConstraints the one I showed in the presentation:
+- [TinyConstraints Playground](https://github.com/marijnschilling/TinyConstraints)
+
 No inspiration? Here are some suggestions:
 - [🕰 Time](https://github.com/dreymonde/Time?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more) I would reckon a playground description to the enitities introduced in this library could make it even easier to understand.
 - [Hue](https://github.com/hyperoslo/Hue) Hue is the all-in-one coloring utility that you'll ever need. This is very likely to become a colorful project.
@@ -101,6 +104,9 @@ No inspiration? Here are some suggestions:
 What about getting some inspiration from frameworks that alaready have excellent playground readme's?
 - [RxSwift](https://github.com/ReactiveX/RxSwift/blob/master/Documentation/GettingStarted.md#playgrounds) 
 - [AudioKit](https://github.com/audiokit/AudioKit) 
+
+As an example here's the playground I made for the TinyConstraints the one I showed in the presentation:
+- [TinyConstraints Playground](https://github.com/marijnschilling/TinyConstraints)
 
 
 
