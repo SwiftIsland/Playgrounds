@@ -88,7 +88,18 @@ To be able to add more info for your users without cluttering the playground, yo
 When you add a new Playground Page the page you had before will automatically get it’s own sub page as well. And the links to the previous page are also automatically added:
 ![new-page-2.png](new-page-2.png)
 
+Now you are ready to start writing your own interactive readme, if you yourself made any frameworks i would suggest to write a readme for one of those. Otherwise I would suggest to write one for your favourite framework, like I did. 
 
+No inspiration? Here are some suggestions:
+- [🕰 Time](https://github.com/dreymonde/Time?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more) I would reckon a playground description to the enitities introduced in this library could make it even easier to understand.
+- [Hue](https://github.com/hyperoslo/Hue) Hue is the all-in-one coloring utility that you'll ever need. This is very likely to become a colorful project.
+-[Alamofire](https://github.com/Alamofire/Alamofire) Make it easier for people to get on board with Elegant HTTP Networking in Swift.
+-[Cheers](https://github.com/hyperoslo/Cheers) 🎊 Fancy confetti effects in Swift, if you are looking for a cheerful project.
+-[](https://github.com/icanzilb/TaskQueue) Nice challenge to make a playground description for something abstract like a task queue.
+
+What about getting some inspiration from frameworks that alaready have excellent playground readme's?
+- [RxSwift](https://github.com/ReactiveX/RxSwift/blob/master/Documentation/GettingStarted.md#playgrounds) 
+- [AudioKit](https://github.com/audiokit/AudioKit) 
 
 
 
