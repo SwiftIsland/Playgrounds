@@ -88,6 +88,7 @@ Simply tick the render documentation box in the Inspector and the markdown is di
 ![markdown.png](markdown.png)
 
 You can also add a shortcut for this toggle: by going into **Xcode** > **Preferences** > **Key Bindings**, then search for **Show Rendered Markup**.
+![shortcut.png](shortcut.png)
 
 There are many possibilities, adding links, notes and even images and videos. Which can be very helpful in an educational playground.
 
