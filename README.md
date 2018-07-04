@@ -52,12 +52,12 @@ Remember to always open the  `.xcodeproj`  file and not just the `.playground` f
 Still having trouble? Here are some other tips:
 - Sometimes Playgrounds can be a bit buggy, so building the framework again and playing the playground again can never hurt. 
 - Restarting XCode can also be a good idea in some cases of uncorporation
-- make sure you have the build target for you framework set to the same platform as your playground
+- Make sure you build your project on a Simulator, and that the playground platform is set to the same as the target.
 ![platform.png](platform.png)
 - follow these steps to check wether the framework is added correctly:
-    * Go to *File* > *Project Settings*
-    * Click on *Advanced*
-    * Click on *Products* to open the Build products directory
+    * Go to **File** > **Project Settings**
+    * Click on **Advanced**
+    * Click on **Products** to open the Build products directory
     ![build-products.png](build-products.png)
     * In there you should find your framework.
 
@@ -86,6 +86,8 @@ For the possibilities of markdown in Playgrounds check [this](https://developer.
 
 Simply tick the render documentation box in the Inspector and the markdown is displayed:
 ![markdown.png](markdown.png)
+
+You can also add a shortcut for this toggle: by going into **Xcode** > **Preferences** > **Key Bindings**, then search for **Show Rendered Markup**.
 
 There are many possibilities, adding links, notes and even images and videos. Which can be very helpful in an educational playground.
 
