@@ -54,7 +54,12 @@ Still having trouble? Here are some other tips:
 - Restarting XCode can also be a good idea in some cases of uncorporation
 - make sure you have the build target for you framework set to the same platform as your playground
 ![platform.png](platform.png)
-- We can probably add more things to this list during the Workshop.
+- follow these steps to check wether the framework is added correctly:
+    1. Go to File > Project Settings
+    2. Click on Advanced
+    3. Click on Procudts to open the Build products directory
+    ![build-products.png](build-products.png)
+    4. In there you should find your framework.
 
 ### Playground description
 
