@@ -115,8 +115,3 @@ What about getting some inspiration from frameworks that alaready have excellent
 
 As an example here's the playground I made for the TinyConstraints the one I showed in the presentation:
 - [TinyConstraints Playground](https://github.com/marijnschilling/TinyConstraints)
-
-
-
-
-
