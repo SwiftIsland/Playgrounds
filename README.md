@@ -103,6 +103,11 @@ When you add a new Playground Page the page you had before will automatically ge
 
 Each playground page will have it’s own resources and sources folder. This can be quite convenient when creating a customPlaygroundDescription for the same entity that you want to be different per playground page.
 
+### Pro-tips
+- When you want to use the keyboard in our liveview, make sure you set the prefferedContentSize of the ViewController to the size of the view: `vc.preferredContentSize = vc.view.frame.size `
+- When you want to run asynchronus code make sure you set `PlaygroundPage.current.needsIndefiniteExecution = true` in your completionBlock you can call `PlaygroundPage.current.finishExecution()` (You need to `import PlaygroundSupport` to use this)
+- If you want to make your Playground recognize an Objective-C framework make sure the header that has all your imports is available in the public headers, not the project headers. Little sidenote: check if your framework doesn't have other dependencies as well, that could complicate things as well!
+![objective-c.png](objective-c.png)
 ---
 
 Now you are ready to start writing your own interactive readme, if you yourself made any frameworks i would suggest to write a readme for one of those. Otherwise I would suggest to write one for your favourite framework, like I did. 
