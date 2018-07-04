@@ -52,14 +52,15 @@ Remember to always open the  `.xcodeproj`  file and not just the `.playground` f
 Still having trouble? Here are some other tips:
 - Sometimes Playgrounds can be a bit buggy, so building the framework again and playing the playground again can never hurt. 
 - Restarting XCode can also be a good idea in some cases of uncorporation
-- make sure you have the build target for you framework set to the same platform as your playground
+- Make sure you build your project on the latest iOS version, and on a Simulator when you have the playground platform set to iOS, since in this case Playgrounds uses the simulator to run on.
 ![platform.png](platform.png)
 - follow these steps to check wether the framework is added correctly:
-    * Go to *File* > *Project Settings*
-    * Click on *Advanced*
-    * Click on *Products* to open the Build products directory
+    * Go to **File** > **Project Settings**
+    * Click on **Advanced**
+    * Click on **Products** to open the Build products directory
     ![build-products.png](build-products.png)
     * In there you should find your framework.
+- Try to build your project on different simulators, chances are that will make it work.
 
 ### Playground description
 
@@ -87,6 +88,9 @@ For the possibilities of markdown in Playgrounds check [this](https://developer.
 Simply tick the render documentation box in the Inspector and the markdown is displayed:
 ![markdown.png](markdown.png)
 
+You can also add a shortcut for this toggle: by going into **Xcode** > **Preferences** > **Key Bindings**, then search for **Show Rendered Markup**.
+![shortcut.png](shortcut.png)
+
 There are many possibilities, adding links, notes and even images and videos. Which can be very helpful in an educational playground.
 
 ### Playground Pages
@@ -99,6 +103,11 @@ When you add a new Playground Page the page you had before will automatically ge
 
 Each playground page will have it’s own resources and sources folder. This can be quite convenient when creating a customPlaygroundDescription for the same entity that you want to be different per playground page.
 
+### Pro-tips
+- When you want to use the keyboard in our liveview, make sure you set the prefferedContentSize of the ViewController to the size of the view: `vc.preferredContentSize = vc.view.frame.size `
+- When you want to run asynchronus code make sure you set `PlaygroundPage.current.needsIndefiniteExecution = true` in your completionBlock you can call `PlaygroundPage.current.finishExecution()` (You need to `import PlaygroundSupport` to use this)
+- If you want to make your Playground recognize an Objective-C framework make sure the header that has all your imports is available in the public headers, not the project headers. Little sidenote: check if your framework doesn't have other dependencies as well, that could complicate things as well!
+![objective-c.png](objective-c.png)
 ---
 
 Now you are ready to start writing your own interactive readme, if you yourself made any frameworks i would suggest to write a readme for one of those. Otherwise I would suggest to write one for your favourite framework, like I did. 
