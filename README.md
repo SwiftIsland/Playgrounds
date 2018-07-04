@@ -55,11 +55,11 @@ Still having trouble? Here are some other tips:
 - make sure you have the build target for you framework set to the same platform as your playground
 ![platform.png](platform.png)
 - follow these steps to check wether the framework is added correctly:
-    1. Go to File > Project Settings
-    2. Click on Advanced
-    3. Click on Procudts to open the Build products directory
+    * Go to File > Project Settings
+    * Click on Advanced
+    * Click on Procudts to open the Build products directory
     ![build-products.png](build-products.png)
-    4. In there you should find your framework.
+    * In there you should find your framework.
 
 ### Playground description
 
