@@ -52,7 +52,7 @@ Remember to always open the  `.xcodeproj`  file and not just the `.playground` f
 Still having trouble? Here are some other tips:
 - Sometimes Playgrounds can be a bit buggy, so building the framework again and playing the playground again can never hurt. 
 - Restarting XCode can also be a good idea in some cases of uncorporation
-- Make sure you build your project on a Simulator, and that the playground platform is set to the same as the target.
+- Make sure you build your project on the latest iOS version, and on a Simulator when you have the playground platform set to iOS, since in this case Playgrounds uses the simulator to run on.
 ![platform.png](platform.png)
 - follow these steps to check wether the framework is added correctly:
     * Go to **File** > **Project Settings**
@@ -60,6 +60,7 @@ Still having trouble? Here are some other tips:
     * Click on **Products** to open the Build products directory
     ![build-products.png](build-products.png)
     * In there you should find your framework.
+- Try to build your project on different simulators, chances are that will make it work.
 
 ### Playground description
 
